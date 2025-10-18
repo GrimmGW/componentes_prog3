@@ -10,9 +10,17 @@ class Listview2Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Menu principal'),
-        backgroundColor: Colors.blueAccent,
+        // backgroundColor: Colors.blueAccent,
       ),
       body: ListView.separated(
+        //Tamaño de nuestra lista
+        itemCount: AppRoutes.menuOptions.length,
+
+        //Usar los guiones bajos omite el uso de context y/o int
+        separatorBuilder: ( _ , __ ){
+          return const Divider();
+        }, 
+        //Contructor del Widget
         itemBuilder: (context, index) {
           return ListTile(
             title: Text( AppRoutes.menuOptions[index].name ),
@@ -23,11 +31,6 @@ class Listview2Screen extends StatelessWidget {
             },
           );
         }, 
-        //Usar los guiones bajos omite el uso de context y/o int
-        separatorBuilder: ( _ , __ ){
-          return const Divider();
-        }, 
-        itemCount: AppRoutes.menuOptions.length
       )
     );
   }
