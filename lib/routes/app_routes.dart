@@ -10,6 +10,7 @@ class AppRoutes {
     MenuOptions(route: '/home', icon: Icons.home_filled, name: 'Menu Principal', screen: const Listview2Screen()),
     MenuOptions(route: '/listview1', icon: Icons.list, name: 'Listview 1', screen: const ListViewScreen()),
     MenuOptions(route: '/alert', icon: Icons.warning_rounded, name: 'Pantalla de Alertas', screen: const AlertScreen()),
+    MenuOptions(route: '/avatar', icon: Icons.supervised_user_circle_rounded, name: 'Pantalla de Perfil', screen: const AvatarScreen())
   ];
 
 
@@ -17,6 +18,7 @@ class AppRoutes {
     '/home' : (BuildContext context) => const Listview2Screen(),
     '/listview1' : (BuildContext context) => const ListViewScreen(),
     '/alert' : (BuildContext context) => const AlertScreen(),
+    '/avatar' : (BuildContext context) => const AvatarScreen(),
   };
 
 }
