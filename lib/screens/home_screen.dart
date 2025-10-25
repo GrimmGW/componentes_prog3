@@ -1,9 +1,9 @@
 import 'package:componentes_prog3/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
-class Listview2Screen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
    
-  const Listview2Screen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
