@@ -10,7 +10,7 @@ class AppTheme {
 
     //Tema para el AppBar
     appBarTheme: AppBarThemeData(
-      backgroundColor: AppTheme.primary
+      backgroundColor: AppTheme.primary,
     ),
 
     filledButtonTheme: FilledButtonThemeData(
