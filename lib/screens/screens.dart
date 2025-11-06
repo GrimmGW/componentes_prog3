@@ -1,3 +1,4 @@
+export 'package:componentes_prog3/screens/inputs_screen.dart';
 export 'package:componentes_prog3/screens/alert_screen.dart';
 export 'package:componentes_prog3/screens/avatar_screen.dart';
 export 'package:componentes_prog3/screens/card_screen.dart';

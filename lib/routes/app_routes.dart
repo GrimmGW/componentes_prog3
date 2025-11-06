@@ -15,7 +15,9 @@ class AppRoutes {
     MenuOptions(route: '/card', icon: Icons.card_membership_rounded, name: 'Pantalla de Tarjetas', screen: const CardScreen()),
     MenuOptions(route: '/container', icon: Icons.check_box_outline_blank_outlined, name: 'Pantalla de Container', screen: const ContainerScreen()),
     MenuOptions(route: '/dependencies', icon: FontAwesomeIcons.puzzlePiece, name: 'Pantalla de Dependencias', screen: const DependenciesScreen()),
-    MenuOptions(route: '/slider', icon: FontAwesomeIcons.sliders, name: 'Pantalla de Sliders', screen: const SliderScreen())
+    MenuOptions(route: '/slider', icon: FontAwesomeIcons.sliders, name: 'Pantalla de Sliders', screen: const SliderScreen()),
+    MenuOptions(route: '/inputs', icon: FontAwesomeIcons.textWidth, name: 'Pantalla de Inputs', screen: const InputsScreen()),
+    
   ];
 
 
@@ -27,7 +29,8 @@ class AppRoutes {
     '/card' : (BuildContext context) => const CardScreen(),
     '/container' : (BuildContext context) => const ContainerScreen(),
     '/dependencies' : (BuildContext context) => const DependenciesScreen(),
-    '/slider' : (BuildContext context) => const SliderScreen()
+    '/slider' : (BuildContext context) => const SliderScreen(),
+    '/inputs' : (BuildContext context) => const InputsScreen(),
   };
 
 }

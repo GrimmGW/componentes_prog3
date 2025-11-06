@@ -13,6 +13,7 @@ class AppTheme {
       backgroundColor: AppTheme.primary,
     ),
 
+    //tema para filledButton
     filledButtonTheme: FilledButtonThemeData(
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all(AppTheme.primary),
@@ -20,9 +21,27 @@ class AppTheme {
       )
     ),
 
+    //tema para textButton
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
         foregroundColor: WidgetStateProperty.all(AppTheme.primaryDarker),
+      )
+    ),
+
+    //tema para inputs
+    inputDecorationTheme: const InputDecorationTheme(
+      floatingLabelStyle: TextStyle(color: Colors.black),
+
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+        borderSide: BorderSide(
+          color: Colors.black,
+          width: 2
+        )
+      ),
+
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(20))
       )
     )
 
